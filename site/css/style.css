@@ -168,7 +168,11 @@ main #box {
     position: relative;
     overflow: hidden;
     border: 1px solid #ffffff14;
-    box-shadow: inset 0 1px 1px 1px #be7afa14;
+    box-shadow: inset 0 1px 10px 1px #be7afa14;
+}
+
+main #box #mini-grade {
+    display: none;
 }
 
 
@@ -180,8 +184,8 @@ main #box #grade:after {
     transform: translate(-50%, -50%);
     border: 13px dashed rgba(190, 122, 250, 0.6);
     animation: spin 200s linear 2.5s infinite;
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
 }
 
@@ -196,16 +200,16 @@ main #box #grade:after {
 }
 
 main #box #grade {
-    width: 400px;
-    height: 400px;
+    width: 340px;
+    height: 340px;
     position: absolute;
     top: -4rem;
-    right: -4rem;
+    right: -3rem;
     z-index: 1;
     opacity: 0;
     text-align: center;
     align-content: center;
-    font-size: 8rem;
+    font-size: 6.5rem;
     font-weight: 700;
     transform: rotateZ(-13deg);
     animation: stamp 500ms cubic-bezier(.31, .57, .16, .98) 2s;
